@@ -1,0 +1,33 @@
+(link for the Q is):
+-> https://takeuforward.org/data-structure/factorial-of-a-number-iterative-and-recursive/
+
+Q)factorial using recursion 
+
+code:
+
+#include<iostream>
+using namespace std;
+
+int fact=1;
+int factNumber(int n)
+{
+    if(n==1||n==0)
+    {
+        fact=1;
+        return fact;
+    }
+    else
+    {
+        fact=n*factNumber(n-1);
+        return fact;
+    }
+}
+int main()
+{
+    int n;
+    cout<<"Enter value of n\n";
+    cin>>n;
+
+    cout<<factNumber(n);
+}
+
